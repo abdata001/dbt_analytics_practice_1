@@ -1,5 +1,2 @@
-with source as (
-    select * from {{ source('JAFFLE_SHOP', 'CUSTOMERS') }}
-) 
+select * from {{ source('jaffle_shop', 'customers') }}
 
-select * from source
